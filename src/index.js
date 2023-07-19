@@ -29,6 +29,7 @@ const defaultOptions = {
   customLabels: [],
   transformLabels: null,
   normalizeStatus: true,
+  normalizeRoute: true,
 };
 
 module.exports = (userOptions = {}) => {
@@ -70,7 +71,7 @@ module.exports = (userOptions = {}) => {
     // will replace ids from the route with `#val` placeholder this serves to
     // measure the same routes, e.g., /image/id1, and /image/id2, will be
     // treated as the same route
-    const route = normalizePath(originalUrl, options.extraMasks);
+    const route = options.normalizeRoute ? normalizePath(originalUrl, options.extraMasks) : originalUrl;
 
     if (route !== metricsPath) {
       const status = normalizeStatus
