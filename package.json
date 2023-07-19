@@ -1,6 +1,6 @@
 {
   "name": "@zebrainy/express-prometheus-middleware",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "RED/USE metrics for express applications",
   "keywords": [
     "express",
@@ -18,8 +18,7 @@
   "private": false,
   "scripts": {
     "lint": "eslint . && echo '✔  Your .js files look good.'",
-    "release": "standard-version",
-    "build": "tsc"
+    "release": "standard-version"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
