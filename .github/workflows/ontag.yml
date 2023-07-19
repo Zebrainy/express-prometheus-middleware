@@ -58,9 +58,6 @@ jobs:
       - name: Install dependencies
         run: yarn
 
-      - name: Build project
-        run: yarn build
-
       - name: NPM Publish
         uses: JS-DevTools/npm-publish@v1
         with:
