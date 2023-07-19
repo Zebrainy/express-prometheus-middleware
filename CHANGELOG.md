@@ -2,6 +2,44 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 2.0.0 (2023-07-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* The /metrics route will not be exposed through the middleware if the 'metricsApp' option is provided.
+* to migrate, install express and prom-client as dependencies in
+your own project
+
+### Features
+
+* add an authetication option callback to the metrics route ([4df5fe9](https://github.com/joao-fontenele/express-prometheus-middleware/commit/4df5fe9acd78bb52341cf766cfd1a9142c0a3c8d))
+* add keywords for package.json ([f66b7fa](https://github.com/joao-fontenele/express-prometheus-middleware/commit/f66b7fad3c5398348c16be2cf60803129e205604))
+* add metrics for request length and response length ([30ec2ed](https://github.com/joao-fontenele/express-prometheus-middleware/commit/30ec2eddf660858a22a6677571d8f3afd022d241))
+* add optional dependency to collect garbage collector metrics too ([6a1eb87](https://github.com/joao-fontenele/express-prometheus-middleware/commit/6a1eb875c097269661a0d2c36530b6188bb256ae))
+* add posibility to add custom labels ([7e48758](https://github.com/joao-fontenele/express-prometheus-middleware/commit/7e487584d8ebe073de4f87bb478eba1e8cdd2205))
+* allow metrics route to be exposed on separate port ([69af583](https://github.com/joao-fontenele/express-prometheus-middleware/commit/69af583b24d40bbec5bfd1181d806832052669b1))
+* allow metrics to be served under a custom app ([06bbdba](https://github.com/joao-fontenele/express-prometheus-middleware/commit/06bbdba23c1d0fa00dc2ba881a9eef72b1bae6e5))
+* allow more options for the user ([226d6b0](https://github.com/joao-fontenele/express-prometheus-middleware/commit/226d6b0113a85730dca8d6f4ad567bdfe743a615))
+* Allow specifying extraMasks for URL normalizer ([428a767](https://github.com/joao-fontenele/express-prometheus-middleware/commit/428a767048c6405347595c48b73e73efcfcad817))
+* allow user to configure scrape metrics route ([18c9576](https://github.com/joao-fontenele/express-prometheus-middleware/commit/18c95761b5c50bcca39f128dc5f69fb4d265928d))
+* alter to normalization of status code to an function optional ([09cfa46](https://github.com/joao-fontenele/express-prometheus-middleware/commit/09cfa46b9cfc6c61260f4cb3e7a9b59a81b8e489))
+* change http duration metric from milliseconds to seconds ([fda644c](https://github.com/joao-fontenele/express-prometheus-middleware/commit/fda644c58638b63a633ff020b371ba36f7545b64))
+* extend compatibility with prom-client v13.x ([e18732b](https://github.com/joao-fontenele/express-prometheus-middleware/commit/e18732bc11fef7474b7dd0bad50b52982ea11edc))
+* **prefix:** Allow adding metrics prefix name ([ead5c1a](https://github.com/joao-fontenele/express-prometheus-middleware/commit/ead5c1a4ecf1ba2888784050589c4ed359b8f182))
+* export a middleware factory ([af1acd6](https://github.com/joao-fontenele/express-prometheus-middleware/commit/af1acd6aaa57d2616c59e7e5cd9cd40937861fbf))
+* initial commit ([7beaad4](https://github.com/joao-fontenele/express-prometheus-middleware/commit/7beaad4c3f34ee440d300b40435946a32aa8e246))
+* initial version of the middleware ([bbf50fb](https://github.com/joao-fontenele/express-prometheus-middleware/commit/bbf50fb3215b5e457247b42eb6d98c909afd586a))
+
+
+### Bug Fixes
+
+* commitlint misreporting release commit ([cbd4101](https://github.com/joao-fontenele/express-prometheus-middleware/commit/cbd410192dd7bf8003a56471ecae145274377267))
+* Removes `x-powered-by` header ([f13a3a5](https://github.com/joao-fontenele/express-prometheus-middleware/commit/f13a3a5ce9ebcd1d50d42cc3ef4bbad178dd68b1)), closes [#3](https://github.com/joao-fontenele/express-prometheus-middleware/issues/3)
+* return middleware ([50bae3f](https://github.com/joao-fontenele/express-prometheus-middleware/commit/50bae3ff43a122ef52fb8d572aa5f8faae31e05f))
+* route was wrong when mounting from another route ([c3bb869](https://github.com/joao-fontenele/express-prometheus-middleware/commit/c3bb8699a84fa6957030c74b162dd801a50438f7))
+* use prom-client and express as peer dependencies ([4825c8c](https://github.com/joao-fontenele/express-prometheus-middleware/commit/4825c8c409f391d0797e5c02ddb03868c108db6e)), closes [#22](https://github.com/joao-fontenele/express-prometheus-middleware/issues/22)
+
 ## [1.2.0](https://github.com/joao-fontenele/express-prometheus-middleware/compare/v1.1.0...v1.2.0) (2021-04-24)
 
 
